@@ -1,9 +1,9 @@
 # PES VCS Lab - Content Addressable Version Control System
 
 ## 👨‍💻 Student Details
-- Name: C. KOUSHIK
-- SRN: PES1UG24CS128
-- Section: 4-C
+- Name: Sreyaesh Peruri
+- SRN: PES1UG24AM189
+- Section: D
 
 ---
 
