@@ -1,50 +1,74 @@
-PES VCS Lab - Content Addressable Version Control System
-👨‍💻 Student Details
-Name: Sreyaesh Peruri
-SRN: PES1UG24AM189
-Section: D
-📌 Project Description
-This project implements a simplified Git-like Version Control System called PES VCS.
+# PES VCS Lab - Content Addressable Version Control System
+
+## 👨‍💻 Student Details
+- Name: C. KOUSHIK
+- SRN: PES1UG24CS128
+- Section: 4-C
+
+---
+
+## 📌 Project Description
+
+This project implements a simplified Git-like Version Control System called PES VCS.  
 It supports object storage, trees, indexing, commits, and history traversal.
 
-⚙️ Features Implemented
-Phase 1 - Object Store
-Content-addressable storage using SHA-256
-Blob objects stored in .pes/objects/
-Functions:
-object_write()
-object_read()
-Phase 2 - Tree Objects
-Directory snapshot representation
-Tree serialization and parsing
-Functions:
-tree_serialize()
-tree_parse()
-tree_from_index()
-Phase 3 - Index (Staging Area)
-Tracks files to be committed
-Text-based .pes/index
-Functions:
-index_load()
-index_save()
-index_add()
-Phase 4 - Commit System
-Stores project snapshots
-Maintains commit history
-Functions:
-commit_create()
-commit_parse()
-commit_serialize()
-commit_walk()
-🚀 How to Run
-make
-./pes init
-echo Hello > file.txt
-./pes add file.txt
-./pes commit -m "Initial commit"
-./pes log
+---
 
-📸 Screenshots Included
+## ⚙️ Features Implemented
+
+### Phase 1 - Object Store
+- Content-addressable storage using SHA-256
+- Blob objects stored in `.pes/objects/`
+- Functions:
+  - object_write()
+  - object_read()
+
+---
+
+### Phase 2 - Tree Objects
+- Directory snapshot representation
+- Tree serialization and parsing
+- Functions:
+  - tree_serialize()
+  - tree_parse()
+  - tree_from_index()
+
+---
+
+### Phase 3 - Index (Staging Area)
+- Tracks files to be committed
+- Text-based `.pes/index`
+- Functions:
+  - index_load()
+  - index_save()
+  - index_add()
+
+---
+
+### Phase 4 - Commit System
+- Stores project snapshots
+- Maintains commit history
+- Functions:
+  - commit_create()
+  - commit_parse()
+  - commit_serialize()
+  - commit_walk()
+
+---
+
+## 🚀 How to Run
+
+make  
+./pes init  
+echo Hello > file.txt  
+./pes add file.txt  
+./pes commit -m "Initial commit"  
+./pes log  
+
+---
+
+## 📸 Screenshots Included
+
 Phase 1: Object tests
 
 <img width="984" height="162" alt="1A" src="https://github.com/user-attachments/assets/35c03be4-10ff-4126-8360-22fd53f53d77" />
@@ -76,21 +100,32 @@ Phase 4: Commit log
 FINAL INTEGRATION TEST
 
 image
-🧠 Concepts Learned
-Hashing (SHA-256)
-File system storage
-Version control internals
-Trees and commits
-Atomic file operations
-📂 Repository Structure
-. ├── object.c
-├── tree.c
-├── index.c
-├── commit.c
-├── pes.c
-├── Makefile
-├── README.md
-└── screenshots/
+---
 
-🎯 Conclusion
+## 🧠 Concepts Learned
+
+- Hashing (SHA-256)  
+- File system storage  
+- Version control internals  
+- Trees and commits  
+- Atomic file operations  
+
+---
+
+## 📂 Repository Structure
+
+.
+├── object.c  
+├── tree.c  
+├── index.c  
+├── commit.c  
+├── pes.c  
+├── Makefile  
+├── README.md  
+└── screenshots/  
+
+---
+
+## 🎯 Conclusion
+
 This project helped in understanding how Git internally manages data using content-addressable storage, trees, and commits.
